@@ -1,3 +1,7 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 #global {
   width: 100%;
   height: 100vh;
@@ -8,7 +12,6 @@ nav {
   width: 100%;
   height: 3vw;
   color: white;
-  font-family: 'Montserrat', sans-serif;
 }
 
 nav ul {
@@ -42,10 +45,53 @@ nav ul li:not(:first-child) {
   background: radial-gradient(circle, #0c026c 0%, #0a002a 100%);
 }
 
-#baniere p {
-  margin-left: 70%;
+#baniere #bienvenue {
+  position: absolute;
   color: white;
-  width: 30%;
+  margin: 0 auto;
+  font-size: 3.5vw;
+  top: 15vw;
+  left: 26vw;
+  font-family: 'Rubik', sans-serif;
+  font-weight: lighter;
+  opacity: 0;
+  transition: all 0.3s;
+  animation: texte 3s ease-in 0s 1 forwards;
+}
+
+#baniere .icon {
+  width: 5vw;
+  position: absolute;
+}
+
+#baniere #html {
+  top: 10vw;
+  left: 30vw;
+}
+
+#baniere #css {
+  top: 10vw;
+  left: 46vw;
+}
+
+#baniere #js {
+  top: 10vw;
+  left: 62vw;
+}
+
+#baniere #cSharp {
+  top: 20vw;
+  left: 30vw;
+}
+
+#baniere #cPlus {
+  top: 20vw;
+  left: 46vw;
+}
+
+#baniere #sql {
+  top: 20vw;
+  left: 62vw;
 }
 
 #nom {
@@ -66,10 +112,6 @@ nav ul li:not(:first-child) {
   font-size: 2vw;
 }
 
-section {
-  font-family: 'Montserrat',sans-serif;
-}
-
 #presentation {
   margin-left: 5vw;
 }
@@ -81,12 +123,12 @@ section {
 
 #presentation p {
   width: 80%;
-  font-size: 1vw;
+  font-size: 1.3vw;
 }
 
 #contenu {
   display: grid;
-  margin: 0 auto;
+  margin: 0 auto 4vw 0;
   padding-top: 2vw;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -108,9 +150,70 @@ section {
   width: 80%;
   text-align: center;
   font-size: 1.3vw;
+  margin-bottom: 0;
+}
+
+#contenu div a {
+  width: 80%;
+  text-align: center;
+  font-size: 1.3vw;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#contenu div a:visited {
+  color: black;
 }
 
 #contenu img {
   width: 25%;
+}
+
+#contact h2 {
+  margin-bottom: 3vw;
+}
+
+#footer {
+  width: 100%;
+  height: 10vw;
+  background: radial-gradient(circle, #0c026c 0%, #0a002a 100%);
+}
+
+/*Animations*/
+@keyframes texte {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul li {
+    font-size: 2vw;
+  }
+  #presentation h1 {
+    font-size: 3vw;
+  }
+  #presentation p {
+    font-size: 2.3vw;
+  }
+  #contenu {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  #contenu div h2 {
+    font-size: 2.5vw;
+  }
+  #contenu div p {
+    font-size: 2.3vw;
+  }
+  #contenu div a {
+    font-size: 2.3vw;
+  }
+  #contact h2 {
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

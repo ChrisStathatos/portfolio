@@ -1,3 +1,6 @@
+*{
+    font-family:'Montserrat', sans-serif;
+}
 #global{
 width:100%;
 height:100vh; 
@@ -7,7 +10,6 @@ nav{
     width:100%;
     height:3vw;
     color:white;
-    font-family:'Montserrat', sans-serif;
     ul{ 
         padding-top:1%;
         margin:0;
@@ -33,10 +35,46 @@ nav{
     height:40vw;
     background: rgb(12,2,108);
     background: radial-gradient(circle, rgba(12,2,108,1) 0%, rgba(10,0,42,1) 100%);
-    p{
-        margin-left:70%;
-        color: white;
-        width:30%;
+    #bienvenue{
+        position: absolute;
+        color:white;
+        margin: 0 auto;
+        font-size:3.5vw;
+        top: 15vw;
+        left:26vw;
+        font-family: 'Rubik', sans-serif;
+        font-weight: lighter;
+        opacity: 0;
+        transition: all 0.3s;
+        animation: texte 3s ease-in 0s 1 forwards;
+    }
+    .icon{
+        width:5vw;
+        position:absolute;
+    }
+    #html{
+        top: 10vw;
+        left:30vw;
+    }
+    #css{
+        top: 10vw;
+        left:46vw;
+    }
+    #js{
+        top: 10vw;
+        left:62vw;
+    }
+    #cSharp{
+        top: 20vw;
+        left:30vw;
+    }
+    #cPlus{
+        top: 20vw;
+        left:46vw;
+    }
+    #sql{
+        top: 20vw;
+        left:62vw;
     }
 }
 #nom{
@@ -55,9 +93,7 @@ nav{
     
     }
 }
-section{
-    font-family: 'Montserrat',sans-serif;
-}
+
 #presentation{
 
     margin-left:5vw;
@@ -68,12 +104,12 @@ section{
     }
     p{
         width:80%;
-        font-size:1vw;
+        font-size:1.3vw;
     }
 }
 #contenu{
     display:grid;
-    margin:0 auto;
+    margin:0 auto 4vw 0;;
     padding-top:2vw;
     grid-template-columns: 1fr 1fr 1fr;
     div{
@@ -90,9 +126,68 @@ section{
             width:80%;
             text-align:center;
             font-size:1.3vw;
+            margin-bottom: 0;
         }
+        a{
+            width:80%;
+            text-align:center;
+            font-size:1.3vw;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        a:visited{
+            color:black;
+        }    
     }
     img{
         width: 25%;
+    }
+}
+#contact h2{
+    margin-bottom: 3vw;
+}
+#footer{
+    width:100%;
+    height:10vw;
+    background: radial-gradient(circle, rgba(12,2,108,1) 0%, rgba(10,0,42,1) 100%);
+}
+
+/*Animations*/
+@keyframes texte {
+    from{opacity: 0;}
+    to{opacity: 1;}     
+}
+//responsive
+@media screen and (max-width: 768px){
+    nav{
+        ul li{
+            font-size:2vw;
+        }
+    }
+    #presentation{
+        h1{
+            font-size:3vw;
+        }
+        p{
+            font-size:2.3vw;
+        }
+    }
+    #contenu{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        div{
+        h2{
+            font-size:2.5vw;
+        }
+        p{
+            font-size:2.3vw;
+        }
+        a{
+            font-size:2.3vw;
+        }
+    }
+    }
+    #contact h2{
+        margin-bottom: 0;
     }
 }

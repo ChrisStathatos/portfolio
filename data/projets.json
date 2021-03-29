@@ -1,0 +1,42 @@
+{
+    "projets":[
+        {
+            "nom" : "TIM 2020",
+            "description":"Lors de ma cinquième session en multiméda, mon projet de session en web était de refaire le site web de la technique. Mes collègues et moi ont alors monter ce joli site web. Tout au long de la session, nous avons travailler ensemble à distance pour finir avec un résultat dont nous sommes tous fiers. Nous sommes aller avec une approche plus abstraite, en utilisant différentes formes géométrique pour exprimer notre design.",
+            "image":"../images/tim-2020-2.png",
+            "url" :"https://github.com/ChrisStathatos/TIM-2020"
+        },
+        {
+            "nom" : "Kidnapp Class",
+            "description":"Encore lors de ma cinquième session en multimédia, mon projet de session en développement de jeu était de fabriquer un jeu vidéo de A à Z. C'était un défi agréable à surmonter où j'ai appris beaucoup de choses et où j'ai eu beaucoup de plaisir. Dans Kidnapp Class, tu dois trouver des indices cachés dans l'avion qui t'aideras à résoudre l'énigme qui te permettras de t'échapper de l'avion qui s'écrase.",
+            "image":"../images/kidnappClassJeu.png",
+            "url" :""
+
+        },
+        {
+            "nom" : "The Ethereal Soldier",
+            "description":"The Ethereal Soldier est le premier jeu vidéo en 3D que j'ai conçu. Nous étions deux pour faire ce projet et c'était beaucoup de travail, d'erreur et de plaisir. Dans The Ethereal Soldier, tu dois te promener dans le monde pour vaincre différents ennemis et ensuite le derniers boss",
+            "image":"../images/etherealSoldierJeu.png",
+            "url" :""
+            
+        },
+        {
+            "nom" : "Site web pour Labs Music",
+            "description":"Ce site web est mon premier projet personnel que j'ai fais. Dans ma troisième session, Nous avons pour but de faire notre premier site web et j'ai proposé à mon professeur de guitare de lui refaire son site web pour le projet de mon cours. Malheureusement, il a décidé de ne pas le mettre en ligne, car il n'en avait pas de besoin et qu'il n'utilisait plus son site web. Cela reste beau petit projet.",
+            "image":"../images/siteMusique2.png",
+            "url" :""
+        },
+        {
+            "nom" : "Assassine",
+            "description":"Assassine est la première conception d'un jeu vidéo que j'ai fais. Pour le jour de la terre, nous devions fabriquer un concept de jeu qui sensibilise les gens à faire attention à l'environnement et le présenter pendant la pause commune à l'agora. Les gens pouvaient voter pour leur concept de jeu préféré. Dans Assassine, tu joues un Isayama, son village natal a été détruit par les grosses compagnies pollueuse et tu dois te venger en tuant les patrons de celles-ci. Nous avions gangé le plus de votes parmi les organisateurs du jour de la terre et une bourse de 100$.",
+            "image":"../images/assassine2.png",
+            "url" :""
+        },
+        {
+            "nom" : "À venir...",
+            "description":"",
+            "image":"",
+            "url" :""
+        }
+    ]
+}
